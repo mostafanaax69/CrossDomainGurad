@@ -1,0 +1,180 @@
+INFO:root:POST /payment/transaction HTTP/1.1
+
+INFO:root:Message-ID: 1714017838
+
+INFO:root:Content-Type: application/json 
+
+INFO:root: Accept: application/json
+
+INFO:root:Host: cdg.creditcard.com
+
+INFO:root:Accept-Charset: utf-8
+
+INFO:root:Content-Lengeth: 458
+
+INFO:root:Payload: {
+
+INFO:root:   Transaction: {
+
+INFO:root:      country_id: IL,
+
+INFO:root:      currency_id: ILS,
+
+INFO:root:      amount: 100,
+
+INFO:root:      info: {
+
+INFO:root:         issuer: MasterCard,
+
+INFO:root:         CreditCardNumber: 0050000110234217,
+
+INFO:root:         consumer_name: Mostafa Naamneh,
+
+INFO:root:         ccv: 552,
+
+INFO:root:         consumer_bank: Mercantile,
+
+INFO:root:         bank_code133account_nuTESTSmber:  IL17MR133
+
+INFO:root:      },
+
+INFO:root:      Payment_Reciever: Yosef Yassin,
+
+INFO:root:      Transaction_Date: 2022-03-27
+
+INFO:root:   }
+
+INFO:root:}***
+
+INFO:root:GET /payment/details HTTP/1.1
+
+INFO:root:Message-ID: 1714017840
+
+INFO:root:Content-Type: application/json 
+
+INFO:root: Accept: application/json
+
+INFO:root:Host: cdg.creditcard.com
+
+INFO:root:Accept-Charset: utf-8
+
+INFO:root:Content-Lengeth: 109
+
+INFO:root:Payload: {
+
+INFO:root:   Transaction: {
+
+INFO:root:      Transaction_ID: T22412345678,
+
+INFO:root:      Payment_Reciever: Yosef Yassin
+
+INFO:root:   }
+
+INFO:root:}***
+
+INFO:root:POST /payment/refund HTTP/1.1
+
+INFO:root:Message-ID: 1714017841
+
+INFO:root:Content-Type: application/json 
+
+INFO:root: Accept: application/json
+
+INFO:root:Host: cdg.creditcard.com
+
+INFO:root:Accept-Charset: utf-8
+
+INFO:root:Content-Lengeth: 131
+
+INFO:root:Payload: {
+
+INFO:root:   Transaction: {
+
+INFO:root:      Transaction_ID: T22412345678,
+
+INFO:root:      amount: 50,
+
+INFO:root:      Payment_Receiver: Yosef Yassin
+
+INFO:root:   }
+
+INFO:root:}***
+
+INFO:root:GET /payment/details HTTP/1.1
+
+INFO:root:Message-ID: 1714017840
+
+INFO:root:Content-Type: application/json 
+
+INFO:root: Accept: application/json
+
+INFO:root:Host: cdg.creditcard.com
+
+INFO:root:Accept-Charset: utf-8
+
+INFO:root:Content-Lengeth: 109
+
+INFO:root:Payload: {
+
+INFO:root:   Transaction: {
+
+INFO:root:      Transaction_ID: T22412345678,
+
+INFO:root:      Payment_Reciever: Yosef Yassin
+
+INFO:root:   }
+
+INFO:root:}***
+
+INFO:root:DELETE /payment/cancel HTTP/1.1
+
+INFO:root:Message-ID: 1714017842
+
+INFO:root:Content-Type: application/json 
+
+INFO:root: Accept: application/json
+
+INFO:root:Host: cdg.creditcard.com
+
+INFO:root:Accept-Charset: utf-8
+
+INFO:root:Content-Lengeth: 109
+
+INFO:root:Payload: {
+
+INFO:root:   Transaction: {
+
+INFO:root:      Transaction_ID: T22412345678,
+
+INFO:root:      Payment_Receiver: Yosef Yassin
+
+INFO:root:   }
+
+INFO:root:}***
+
+INFO:root:GET /payment/details HTTP/1.1
+
+INFO:root:Message-ID: 1714017840
+
+INFO:root:Content-Type: application/json 
+
+INFO:root: Accept: application/json
+
+INFO:root:Host: cdg.creditcard.com
+
+INFO:root:Accept-Charset: utf-8
+
+INFO:root:Content-Lengeth: 109
+
+INFO:root:Payload: {
+
+INFO:root:   Transaction: {
+
+INFO:root:      Transaction_ID: T22412345678,
+
+INFO:root:      Payment_Reciever: Yosef Yassin
+
+INFO:root:   }
+
+INFO:root:}***
+

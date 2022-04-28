@@ -1,0 +1,14 @@
+#!/bin/bash
+
+rm  /home/user/Desktop/fifo/*
+rm  /home/user/Desktop/CrossDomainGuard/CDSFiles/A_part.log
+rm  /home/user/Desktop/CrossDomainGuard/CDSFiles/B_part.log
+rm  /home/user/Desktop/CrossDomainGuard/CDSFiles/C_part.log
+
+
+mkfifo /home/user/Desktop/fifo/fifoAB
+mkfifo /home/user/Desktop/fifo/fifoBA
+mkfifo /home/user/Desktop/fifo/fifoCB
+mkfifo /home/user/Desktop/fifo/fifoBC
+
+
